@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vedika Miyani | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #1E2A38;
+      color: #FFFFFF;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #15202B;
+      padding: 20px;
+    }
+
+    nav a {
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00BFFF;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #243B55, #141E30);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      color: #DDE6ED;
+    }
+
+    .social-icons {
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      font-size: 28px;
+      color: #00BFFF;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .resume-button {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #00BFFF;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #009ACD;
+    }
+
+    .skills {
+      padding: 60px 20px;
+      background-color: #2E3B4E;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .certificates {
+      padding: 50px 20px;
+      background-color: #1c1f26;
+      color: #fff;
+      text-align: center;
+    }
+
+    .certificates h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #00BFFF;
+    }
+
+    .cert-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .cert-card {
+      background-color: #2E3B4E;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 300px;
+      flex: 1 1 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 191, 255, 0.2);
+    }
+
+    .cert-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 191, 255, 0.4);
+    }
+
+    .cert-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+    }
+
+    .cert-card p {
+      font-size: 14px;
+      color: #b0c4de;
+      margin-bottom: 15px;
+    }
+
+    .cert-card a {
+      display: inline-block;
+      background-color: #00BFFF;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cert-card a:hover {
+      background-color: #009ACD;
+    }
+
+    .contact {
+      padding: 60px 20px;
+      background-color: #1C2833;
+      text-align: center;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #F5F7FA;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .contact button {
+      background-color: #00BFFF;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #009ACD;
+    }
+
+    footer {
+      background-color: #15202B;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      color: #DDE6ED;
+      font-size: 14px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to my portfolio</h1>
+    <p>I'm Vedika Miyani — Expertise in Logo Design & Typography, Aspiring UI/UX Designer, Python & Java Developer, Creative Mind with a Tech Twist.</p>
+    
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/its_.vediii" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/vedika-miyani-744598363" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!-- Resume Button -->
+    <a class="resume-button" href="https://www.linkedin.com/in/vedika-miyani-744598363" target="_blank">View My Resume</a>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>UI/UX Design</li>
+      <li>Web Development</li>
+      <li>Web Designing</li>
+    </ul>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates" id="certificates">
+    <h2>My Certificates</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>Google UX Design</h3>
+        <p>Offered by Coursera</p>
+        <a href="https://coursera.org/share/d128917aaedd7c0983c4d9379b9fb9fc" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Programming with Java</h3>
+        <p>Offered by Coursera</p>
+        <a href="https://coursera.org/share/fc322e065ff1b69e8f17df68e54b4769" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Digital Marketing</h3>
+        <p>Offered by Coursera</p>
+        <a href="https://coursera.org/share/9cdb4ffdd5cbba2d324ff25469d531b0" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+     <!-- Footer -->
+  <footer>
+    <p>© 2025 Vedika Miyani - Creativity with technology.</p>
+  </footer>
